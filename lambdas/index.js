@@ -4,7 +4,7 @@ var debug = require('debug')('express-lambda-local-gateway:lambdas');
 
 var path = require('path');
 
-var config = require('./config');
+var config = require('../config');
 
 const lambdaLocal = require('lambda-local');
 
@@ -35,7 +35,7 @@ router.get('/', function (req, res, next) {
 router.use('/reload-config', function (req, res, next) {
 	debug("Reloading config");
 	delete require.cache[require.resolve('./config')];
-	config = require('./config');
+	config = require('../config');
 	res.send({
 		result: "RELOADED"
 	}).end();
