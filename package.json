@@ -1,0 +1,24 @@
+{
+  "name": "express-lambda-local-gateway",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/nodemon ./bin/www"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.320.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "debug": "^4.0.1",
+    "express": "^4.16.3",
+    "lambda-local": "^1.5.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.6"
+  }
+}

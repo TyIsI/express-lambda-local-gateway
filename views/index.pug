@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  h2 Endpoints
+  ul
+    each endpoint_methods, endpoint in endpoints
+      li= endpoint
+        ul
+          each endpoint_method_lambda, endpoint_method in endpoint_methods
+            li=  endpoint_method
+              ul
+                each prop, idx in endpoint_method_lambda
+                  li= idx + " => " + prop
+
+  h2 Lambdas
+  ul
+    each lambda_props, lambda_name in lambdas
+      li= lambda_name
+        ul
+          each lambda_prop_val, lambda_prop_name in lambda_props
+            li= lambda_prop_name + " => " + lambda_prop_val
