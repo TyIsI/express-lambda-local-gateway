@@ -6,19 +6,19 @@
     "start": "node_modules/.bin/nodemon ./bin/www"
   },
   "dependencies": {
-    "aws-sdk": "^2.320.0",
-    "body-parser": "^1.18.3",
+    "aws-sdk": "^2.1691.0",
+    "body-parser": "^1.20.3",
     "cookie-parser": "^1.4.3",
     "debug": "^4.0.1",
-    "express": "^4.16.3",
+    "express": "^4.21.0",
     "lambda-local": "^1.5.1",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.4",
-    "pug": "^2.0.3",
-    "request": "^2.88.0",
+    "nodemon": "^3.1.7",
+    "pug": "^3.0.3",
+    "request": "^2.88.2",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "jshint": "^2.9.6"
+    "jshint": "^2.13.6"
   }
 }
